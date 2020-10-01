@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+ padding: 0;
+
+}
+
+body {
+    background-color: beige;
+    color: black;
+     text-align: center;
+     font-family: 'Permanent Marker', cursive;
+     line-height: 1.6;
+     position: relative;
+     animation-name: topIn;
+     animation-duration: 3s;   
+     animation-fill-mode: forwards;
+    }
+
+#showcase h1 {
+    height: 300px;
+}
+#showcase {
+    font-size: 3.5rem;
+}
+
+
+@keyframes topIn {
+  0% {
+     top: -200px;
+  }  
+
+  100%{
+top: 200px
+  }
+}
+
+.container {
+max-width: 960px;
+margin: auto;
+padding: 0 2rem;
+}
+
+#content {
+position: relative;
+animation-name: fromLeft;
+animation-duration: 3s;
+animation-fill-mode: forwards;
+}
+
+@keyframes fromLeft {
+    0% {
+        left: -1000px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+
+
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color:black;
+    border: 2px solid black;
+    padding: 1rem;
+    margin: 2rem;
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+ transition-property: transform;
+ transition-duration: 3s;
+
+
+}
+
+
+
+.btn:hover{
+    transform: rotateY(180deg);
+}
+
+@keyframes btn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
